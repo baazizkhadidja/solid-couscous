@@ -1,0 +1,26 @@
+
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+<h1>ici c'est l'index doody t es là ? <h1/>
+{% if nom == 'abdrrahmane' %}
+<p>welcome boudy <p/> 
+    {% for i in nom  %}
+
+<p>{{i}}<p/>
+{% endfor %}
+
+
+{% elif  nom == 'mohammed'%}
+<p>welcome mohammed <p/>
+
+{% else %}
+<p>welcome<p/>  
+{% endif %}
+
+
+    me = {{nom|capfirst}}
+{% endblock content %}
+
