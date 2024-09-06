@@ -1,26 +1,14 @@
 
 {% extends 'base.html' %}
 
-
+{% load static %}
 
 {% block content %}
-<h1>ici c'est l'index doody t es là ? <h1/>
-{% if nom == 'abdrrahmane' %}
-<p>welcome boudy <p/> 
-    {% for i in nom  %}
+<h1>ici c'est l'index <h1/>
 
-<p>{{i}}<p/>
-{% endfor %}
+    <!img src="{% static 'images/Boussou.JPG' %}" alt="">
 
 
-{% elif  nom == 'mohammed'%}
-<p>welcome mohammed <p/>
-
-{% else %}
-<p>welcome<p/>  
-{% endif %}
-
-
-    me = {{nom|capfirst}}
 {% endblock content %}
+
 
